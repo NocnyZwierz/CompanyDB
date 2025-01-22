@@ -99,7 +99,7 @@ describe("Departmen", () => {
       expect(departments.length).to.be.equal(2);
     });
   });
-
+  
   describe("Removing data", () => {
     beforeEach(async () => {
       const testDepOne = new Department({ name: "Department #1" });
