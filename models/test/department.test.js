@@ -1,6 +1,5 @@
 const expect = require("chai").expect;
 const Department = require("../department.model.js");
-const mongoose = require("mongoose");
 
 describe("Department", () => {
   it('should throw an error if no "name" arg', async () => {
@@ -40,9 +39,5 @@ describe("Department", () => {
         expect(err).to.not.exist;
       });
     }
-  });
-
-  after(() => {
-    mongoose.models = {};
   });
 });
